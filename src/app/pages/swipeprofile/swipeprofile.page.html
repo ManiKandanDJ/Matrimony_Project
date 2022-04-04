@@ -1,0 +1,50 @@
+<ion-header class="ion-no-border" [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>Daily Recommendations</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-row class="gradientBackground"></ion-row>
+  <div class="subContent" *ngIf="profileCheck"></div>
+  <div class="subContenttwo" *ngIf="profileCheck"></div>
+  <ion-grid *ngIf="profileInfo">
+    <ion-row class="ion-justify-content-center profileCard">
+        <ion-card class="mainContent" *ngFor="let profile of profileInfo; let i= index;">
+          <ion-card-content class="ion-no-padding">
+            <ion-card-header class="headerImage ion-no-padding" [style.background-image]="'url('+ profile.profileImage +')'"></ion-card-header>
+            <div class="cardData">
+              <div class="header">{{profile.profileName}}</div>
+              <div class="profileContent">{{profile.profileAge}} Yrs, {{profile.profileHeight}}, {{profile.profileLanguage}}, {{profile.profileCaste}}, {{profile.profileWork}}, 
+                {{profile.profileLocation}}, {{profile.profileState}}, {{profile.profileNationality}}</div>
+              <ion-row class="footer ion-align-items-center" style="margin-top: 20px">
+                <ion-col size="4">
+                  <ion-button class="small" fill="clear" size="small" (click)="shortlist(i)">
+                    <ion-icon slot="start" name="star-outline" ></ion-icon>
+                    <ion-text>Shortlist</ion-text>
+                  </ion-button>
+                </ion-col>
+                <ion-col size="8">
+                  <ion-row class="ion-align-items-center">
+                    <ion-col class="ion-text-right">           
+                      <ion-text class="likeText">Like Her?</ion-text>           
+                      <ion-button class="cancel" color="dark" size="small" shape="round" (click)="notInterested(i)">
+                        <ion-icon name="close"></ion-icon>
+                      </ion-button>
+                      <ion-button class="ok" color="tertiary" size="small" shape="round" (click)="interested(i)">
+                        <ion-icon name="checkmark"></ion-icon>
+                      </ion-button>
+                    </ion-col>
+                  </ion-row>
+                </ion-col>
+              </ion-row>
+            </div>
+          </ion-card-content>
+        </ion-card>
+   
+      </ion-row>
+  </ion-grid>
+</ion-content>

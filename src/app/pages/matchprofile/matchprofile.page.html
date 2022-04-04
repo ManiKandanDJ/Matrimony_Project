@@ -1,0 +1,43 @@
+<ion-header class="ion-no-border" [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>My Matches</ion-title>
+    <ion-buttons slot="end">
+      <ion-icon class="custom-icon menuicon" name="ellipsis-vertical"></ion-icon>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+  
+  <ion-grid class="profileHead">
+    <ion-row>
+      <h4>8 Profiles pending with me <ion-badge slot="start">5 new</ion-badge></h4>
+      <ion-slides [options]="sliderConfig">
+        <ion-slide *ngFor="let profile of profileInfo">
+          <ion-card>
+            <ion-card-header class="ion-no-padding" [style.background-image]="'url('+ profile.profileImage +')'"
+              (click)="profileInfoDetails(profile.profileId)"></ion-card-header>
+            <ion-card-content class="ion-no-padding">
+              <div class="header">{{profile.profileName}}</div>
+              <div class="profileContent">{{profile.profileAge}} Yrs, {{profile.profileHeight}}, {{profile.profileLanguage}}, {{profile.profileCaste}},
+                {{profile.profileWork}}, {{profile.profileLocation}}, {{profile.profileState}}, {{profile.profileNationality}}</div>
+              <ion-row class="footer-card">
+                <ion-col size="4">
+                  <ion-button color="tertiary" size="small" shape="round" (click)="profileInfoDetails(profile.profileId)">Yes
+                  </ion-button>
+                </ion-col>
+                <ion-col size="4">
+                  <ion-button color="light" size="small" shape="round">No</ion-button>
+                </ion-col>
+              </ion-row>
+            </ion-card-content>
+          </ion-card>
+        </ion-slide>
+      </ion-slides>
+    </ion-row>
+  </ion-grid>
+</ion-content>

@@ -1,0 +1,19 @@
+<ion-content [fullscreen]="true">
+ 
+  <ion-title *ngIf="profileInfoDetails"><ion-icon name="arrow-back-outline" (click)="goback()"></ion-icon> {{profileInfoDetails.profileId}}</ion-title>
+  <div class="profile" *ngIf="profileInfoDetails">
+    <ion-slides pager="true" [options]="slideOpts">
+      <ion-slide [style.background-image]="'url('+ profileInfoDetails.profileImage +')'"></ion-slide>
+    </ion-slides>
+    <ion-badge>{{ imgIndex }} / {{ totalImgCount }}</ion-badge>
+    <ion-card class="ion-no-margin">
+      <ion-card-content>
+        <h4>{{profileInfoDetails.profileName}}</h4>
+        <div class="profileContent">{{profileInfoDetails.profileAge}} Yrs, {{profileInfoDetails.profileHeight}}, {{profileInfoDetails.profileLanguage}}, {{profileInfoDetails.profileCaste}},
+          {{profileInfoDetails.profileWork}}, {{profileInfoDetails.profileLocation}},{{profileInfoDetails.profileState}}, {{profileInfoDetails.profileNationality}}</div>
+      </ion-card-content>
+      <ion-text class="line"></ion-text>
+    </ion-card>
+
+  </div>
+</ion-content>

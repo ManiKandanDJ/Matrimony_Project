@@ -1,0 +1,190 @@
+@media only screen and (min-width: 600px) {
+
+    ion-card.mainContent {
+        width: 340px !important;
+    }
+
+    .subContent {
+        width: 310px !important;
+    }
+
+    .subContenttwo {
+        width: 290px !important;
+    }
+}
+
+
+
+ion-title {
+    color: #fff;
+    font-family: sans-serif;
+    margin-left: -10px;
+}
+
+.menuicon {
+    color: #fff;
+    zoom: 1.4;
+}
+
+ion-header {
+    --ion-toolbar-background: transparent;
+}
+
+ion-content {
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    --background: #fff;
+}
+
+.gradientBackground {
+    position: absolute;
+    z-index: 9;
+    height: 50%;
+    width: 100%;
+    background: rgb(89, 186, 107) !important;
+    background: linear-gradient(122deg, rgba(89, 186, 107, 1) 44%, rgba(32, 176, 188, 1) 100%) !important;
+    z-index: 0;
+}
+
+ion-grid {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 7;
+    overflow: visible;
+    transform: translate(-50%, -50%);
+
+}
+
+.profileCard {
+    
+    width: 100%;
+
+}
+
+ion-card.mainContent {
+    margin: auto;
+    display: block;
+    position: absolute;
+    width: calc(80vw);
+    height: calc(70vh);
+    transform: translate(-50%, -50%);
+    top: 58%;
+    left: 50%;
+    border-radius: 11px;
+}
+
+ion-card-content {
+    line-height: 0px !important;
+}
+
+.headerImage {
+    height: 60vh;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.cardData {
+    position: absolute;
+    bottom: 0;
+    height: 32%;
+    background: #fff;
+    width: 100%;
+    padding: 10px;
+    text-align: left;
+
+}
+
+.header {
+    font-weight: bold;
+    font-size: 1.4em;
+    color: #000;
+    font-family: sans-serif;
+    margin-bottom: 27px;
+    margin-top: 18px;
+}
+
+.profileContent {
+    text-align: left;
+    font-size: 1.2em;
+    font-family: sans-serif;
+    width: 250px;
+    line-height: 20px;
+}
+
+.line {
+    width: 95%;
+    height: 0;
+    border: 1px ridge #f8f8f8;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+.small {
+    font-size: 10px;
+    color: #000;
+}
+
+.likeText {
+    color: #000;
+    font-weight: 700;
+    position: relative;
+    top: 5px;
+    right: 5px;
+}
+
+.ok {
+    --padding-start: 1.0em !important;
+    --padding-end: 1.0em !important;
+}
+
+.cancel {
+    --padding-start: 0.7em !important;
+    --padding-end: 0.7em !important;
+}
+
+img {
+    height: 100%;
+}
+
+ion-back-button {
+    color: white;
+}
+
+.subContent {
+    position: absolute;
+    top: 14%;
+    height: 27px;
+    z-index: 3;
+    width: calc(75vw);
+    margin: 0 auto;
+    text-align: center;
+    left: 50%;
+    transform: translate(-50%,-14%);
+    border-radius: 10px;
+    background: #fff;
+    opacity: 0.8;
+    --background: var(--ion-card-background, var(--ion-item-background, var(--ion-background-color, #fff)));
+    --color: var(--ion-card-color, var(--ion-item-color, var(--ion-color-step-550, #737373)));
+    box-shadow: rgb(0 0 0 / 20%) 0px 3px 1px -2px, rgb(0 0 0 / 14%) 0px 2px 2px 0px, rgb(0 0 0 / 12%) 0px 1px 5px 0px;
+}
+
+.subContenttwo {
+    position: absolute;
+    top: 13%;
+    height: 38px;
+    z-index: 3;
+    width: calc(70vw);
+    margin: 0 auto;
+    text-align: center;
+    left: 50%;
+    transform: translate(-50%,-14%);
+    border-radius: 10px;
+    background: #fff;
+    opacity: 0.6;
+    --background: var(--ion-card-background, var(--ion-item-background, var(--ion-background-color, #fff)));
+    --color: var(--ion-card-color, var(--ion-item-color, var(--ion-color-step-550, #737373)));
+    box-shadow: rgb(0 0 0 / 20%) 0px 3px 1px -2px, rgb(0 0 0 / 14%) 0px 2px 2px 0px, rgb(0 0 0 / 12%) 0px 1px 5px 0px;
+}

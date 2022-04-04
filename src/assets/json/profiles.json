@@ -1,0 +1,67 @@
+[
+    {
+        "profileId": "M986123",
+        "profileName": "Praveena",
+        "profileAge": 27,
+        "profileHeight": "5 ft 10 in",
+        "profileLanguage": "Tamil",
+        "profileCaste": "Gounder",
+        "profileWork": "Software Enginner",
+        "profileLocation": "Chennai",
+        "profileState": "TamilNadu",
+        "profileNationality": "India",
+        "profileImage": "./assets/images/profile1.jpg"
+    },
+    {
+        "profileId": "M976173",
+        "profileName": "Geetha",
+        "profileAge": 29,
+        "profileHeight": "5 ft 5 in",
+        "profileLanguage": "Tamil",
+        "profileCaste": "Nair",
+        "profileWork": "MBBS Doctor",
+        "profileLocation": "Thanjavur",
+        "profileState": "TamilNadu",
+        "profileNationality": "India",
+        "profileImage": "./assets/images/profile2.jpg"
+    },
+    {
+        "profileId": "M966153",
+        "profileName": "Mohana",
+        "profileAge": 31,
+        "profileHeight": "5 ft 11 in",
+        "profileLanguage": "Tamil",
+        "profileCaste": "Vellalar",
+        "profileWork": "Software Engineer",
+        "profileLocation": "Trichy",
+        "profileState": "TamilNadu",
+        "profileNationality": "India",
+        "profileImage": "./assets/images/profile3.jpg"
+    },
+    {
+        "profileId": "M866133",
+        "profileName": "Janaki",
+        "profileAge": 23,
+        "profileHeight": "5 ft 5 in",
+        "profileLanguage": "Tamil",
+        "profileCaste": "christian",
+        "profileWork": "MBBS Doctor",
+        "profileLocation": "Selam",
+        "profileState": "TamilNadu",
+        "profileNationality": "India",
+        "profileImage": "./assets/images/profile4.jpg"
+    },
+    {
+        "profileId": "M766153",
+        "profileName": "Gayathiri",
+        "profileAge": 26,
+        "profileHeight": "5 ft 4 in",
+        "profileLanguage": "Tamil",
+        "profileCaste": "Gounder",
+        "profileWork": "Entrepreneur",
+        "profileLocation": "Erode",
+        "profileState": "TamilNadu",
+        "profileNationality": "India",
+        "profileImage": "./assets/images/profile5.jpg"
+    }
+]
